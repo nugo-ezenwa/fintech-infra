@@ -3,7 +3,7 @@
 
 Manage Jenkins → Plugins → Available (or “Installed” to confirm):
 
-Pipeline
+Pipeline.
 
 Pipeline: Multibranch
 
