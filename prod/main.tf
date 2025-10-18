@@ -27,6 +27,9 @@ module "eks" {
   tags     = local.common_tags
   env_name = var.env_name
 
+  providers = {
+    kubernetes = kubernetes.eks
+  }
 
 }
 
@@ -60,6 +63,9 @@ module "eks-client-node" {
   cluster_name           = module.eks.cluster_name
   tags = {
     Name = "eks_client_node"
+  }
+  providers = {
+    kubernetes = kubernetes.eks
   }
   key_name = module.eks-client-node.eks_client_private_key
   user_data = base64encode(<<-EOF
