@@ -30,7 +30,7 @@ module "eks" {
   providers = {
     kubernetes = kubernetes.eks
   }
-  
+
 }
 
 
