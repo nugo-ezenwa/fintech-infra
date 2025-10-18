@@ -7,13 +7,13 @@ variable "ami_id" {
 variable "instance_type" {
   description = "The instance type for the Terraform node"
   type        = string
-  default     = "t2.medium"
+  default     = "t3.medium"
 }
 
 variable "key_name" {
   description = "The key name for the Jenkins server"
   type        = string
-  default     = "DevOps_Train2024"
+  default     = "Key40"
 }
 
 variable "main_region" {

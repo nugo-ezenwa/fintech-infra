@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "Deployment Environment (dev, qa, uat, prod)"
+        description: "Deployment Environment (prod, qa, uat, dev)"
         required: true
         default: "prod"
       region:

@@ -26,6 +26,7 @@ module "eks" {
 
   tags     = local.common_tags
   env_name = var.env_name
+
 }
 
 
